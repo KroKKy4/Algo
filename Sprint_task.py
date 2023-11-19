@@ -26,7 +26,16 @@ def delivery_service(weights: List[int], limit: int) -> int:
     return count
 
 
-weights = list(map(int, input().split()))
-limit = int(input())
+def read_data():
+    weights = list(map(int, input().split()))
+    limit = int(input())
+    return weights, limit
 
-print(delivery_service(weights, limit))
+
+def main():
+    weights, limit = read_data()
+    print(delivery_service(weights, limit))
+
+
+if __name__ == '__main__':
+    main()
