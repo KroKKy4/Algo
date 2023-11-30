@@ -1,5 +1,4 @@
-# 99865278
-# Ранее был отправлен код к другому заданию, прошу прощения.
+# 100397088
 
 def decoder(compressed: str) -> str:
     if len(compressed) == 0:
@@ -29,10 +28,6 @@ def read_data():
     return input_code
 
 
-def main():
+if __name__ == '__main__':
     compressed = read_data()
     print(decoder(compressed))
-
-
-if __name__ == '__main__':
-    main()
